@@ -5,18 +5,42 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>LVWM</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato|Slabo+27px|Source+Code+Pro" rel="stylesheet">
 </head>
 <body>
   <div class="container">
     <header><h1>LVWM: Chatbox</h1></header>
     <main>
-      <aside class="chats"></aside>
+      <aside class="chats">
+        <p class="chat active">
+          <span class="chat-name">First Chatroom</span>
+          <span class="unread">1</span>
+        </p>
+      </aside>
       <section class="chat">
-        <section class="conversation"></section>
-        <section class="form-message"></section>
+        <section class="conversation">
+          <article class="message">
+            <section class="avatar">
+              <img src="http://www.gravatar.com/avatar/c8d6464acfbab2f04dfa85db73dc3b56?d=mm&s=64" alt="Peter">
+            </section>
+            <section class="content">
+              <h2>Peter</h2>
+              <div class="message">
+                <p>Welcome to the LVWM Chatroom!</p>
+              </div>
+              <p class="date">just now.</p>
+            </section>
+          </article>
+        </section>
+        <section class="form-message">
+          <textarea class="txt-message" placeholder="Type something"></textarea>
+          <button class="btn-send">Send</button>
+        </section>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <p class="message">Peter is typing...</p>
+    </footer>
   </div>
 </body>
 </html>
